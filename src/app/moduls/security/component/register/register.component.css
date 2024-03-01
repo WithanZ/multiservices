@@ -1,0 +1,25 @@
+*{
+  background-color: #b3b6b7 ;
+}
+
+.demo{
+  position: center;
+  background-color: transparent;
+
+}
+.demo h1{
+  font-size: 26px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.btn{
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+.btn:hover{
+  background-color: lightgoldenrodyellow;
+  color: black;
+}
+

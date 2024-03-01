@@ -1,0 +1,27 @@
+<mat-form-field class="example-full-width"  style="width: 50%" >
+  <mat-label>search customer</mat-label>
+  <input matInput placeholder="Ex. 12" value=""[ngModelOptions]="{standalone: true}" [(ngModel)]="customerid"
+  (keyup.enter)="searchcusto()" >
+</mat-form-field>
+<hr>
+<table class="table">
+  <thead>
+  <tr>
+
+    <th scope="col">user Id</th>
+    <th scope="col">title</th>
+    <th scope="col">Handle</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let tempData of list">
+
+
+    <td>{{tempData.id}}</td>
+    <td>{{tempData.title}}</td>
+    <td>{{tempData.body}}</td>
+  </tr>
+
+  </tbody>
+</table>
+

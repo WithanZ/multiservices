@@ -1,0 +1,36 @@
+<mat-form-field class="example-full-width"  style="width: 50%" >
+  <mat-label>search customer</mat-label>
+  <input matInput placeholder="Ex. 12" value=""[ngModelOptions]="{standalone: true}" [(ngModel)]="customerid"
+         (keyup.enter)="searchcusto()" >
+</mat-form-field>
+<hr>
+<form [formGroup]="form" (ngSubmit)="update()">
+  <div class="form ml-6">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">id</label>
+      <input type="text" formControlName="id" class="form-control w-50" id="id" aria-describedby="emailHelp" >
+
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">user id</label>
+      <input type="text" formControlName="userid"  class="form-control w-50" id="userid" aria-describedby="emailHelp" >
+
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label"> title</label>
+      <input type="address" formControlName="title"  class="form-control w-50" id="title" aria-describedby="emailHelp" >
+
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">body</label>
+      <input type="email" class="form-control w-50"  formControlName="body"   id="exampleInputEmail1" aria-describedby="emailHelp" >
+
+    </div>
+
+
+
+    <button  [disabled]="form.invalid"  type="submit" class="btn btn-dark mb-5" style="background-color: black" >Update</button>
+  </div>
+
+</form>
+

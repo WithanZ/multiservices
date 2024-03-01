@@ -1,0 +1,11 @@
+.head{
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+.head h3{
+  font-family: "Protest Riot", sans-serif;
+  margin-left: 35px;
+  padding-top: 20px;
+  font-size: 30px;
+}

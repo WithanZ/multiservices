@@ -1,0 +1,23 @@
+<table class="table">
+  <thead>
+  <tr>
+
+
+    <th scope="col">user Id</th>
+    <th scope="col">title</th>
+    <th scope="col">Handle</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let tempData "> //value adu una
+
+
+    <td>{{tempData.id}}</td>
+    <td>{{tempData.title}}</td>
+    <td>{{tempData.body}}</td>
+    <td><button    type="submit" class="btn btn-dark mb-5" style="background-color: black" (click)="delete(tempData.id)" >Delete</button></td>
+  </tr>
+
+  </tbody>
+</table>

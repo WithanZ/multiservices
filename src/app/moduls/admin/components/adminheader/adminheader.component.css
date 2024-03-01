@@ -1,0 +1,29 @@
+.head{
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: flex;
+
+}
+.head h3{
+  font-family: "Protest Riot", sans-serif;
+  margin-left: 35px;
+  padding-top: 20px;
+  font-size: 30px;
+}
+.btn{
+  margin-left: 400px;
+  padding-top: 15px;
+}
+.head button{
+margin-left: 5px;
+  width: 30px;
+  background-color: transparent;
+  color: black;
+  border: none;
+
+
+
+
+
+}
